@@ -1,0 +1,60 @@
+1. Nabrojte sve promenljive, tipove podataka i petlje koje smo 
+koristili dosad i ukratko opišite svaku pomenutu stavku ponaosob. 
+
+   Tipovi podataka su:
+int-    integer, koristi se za cele brojeve
+String- koristi se kod upisa teksta uz obavezne znake navoda (" ")
+double- kod decimalnih brojeva (veci prostor)
+float-  takodje kod decimalnih  (manji prostor)
+char -  kad navodimo po jedan karakter, slovo, 
+        koristi se po jedan navodnik (' ')
+boolean - true i false, 
+
+Promenljive obelezavamo recima ili slovima i uz njih mora da stoji u koji tip podataka spadaju. 
+
+Petlje- mi smo radili za sad konkretno primere za while (i spomenuli smo for); Petlje koristimo kada hocemo da neku naredbu izvrsimo vise puta.
+
+
+2. Napisati program u kom se prilikom unosa imena meseca u godini 
+izracunava koliko  ukupno dana ima u unetim mesecima. 
+Program treba da trazi unos imena od 3 meseca.
+
+
+import java.util.Scanner;
+
+public class MeseciZbir {
+    public static void main(String[] args){
+
+        String x;
+        int sum = 0;
+        int days =0;
+        int i =0;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ubacite imena meseca:");
+
+        while(i<3) {
+            x = sc.nextLine();
+
+            if (x.equals("januar") || x.equals("mart") || x.equals("maj") || x.equals("jul") || x.equals("avgust") || x.equals("oktobar") || x.equals("decembar"))
+            {
+                days = 31;
+            }
+
+            if (x.equals("februar"))
+            {
+                days = 29;
+            }
+
+            if (x.equals("april") || x.equals("jun") || x.equals("septembar") || x.equals("novembar"))
+            {
+                days = 30;
+            }
+
+            i++;
+            sum = sum + days;
+        }
+
+        System.out.println("Broj dana je :" + sum);
+    }
+}

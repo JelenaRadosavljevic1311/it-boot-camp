@@ -1,0 +1,5 @@
+Navesti 3 before/after anotacije i objasniti njihovu funkciju.
+
+1. @BeforeSuite - anotacija koja se obavlja pre svih ostalih testova u suitte-u.
+2. @BeforeClass - anotacija koja ce se obavljati pre klase.
+3. @AfterMethod - anotacija koja ce se obavljati posle svake metode.

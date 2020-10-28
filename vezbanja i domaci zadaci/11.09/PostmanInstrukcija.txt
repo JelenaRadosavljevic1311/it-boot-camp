@@ -1,0 +1,31 @@
+- API je nacin na koji neka aplikacija ili operativni sistem
+omogucava pristup drugim aplikacijama i programima.
+To je skup procedura, funkcija i svega sto odredjuje nacin pristupa aplikaciji. API preuzima upit, salje  na obradu, 
+i na kraju nam vraca odgovor. 
+
+- POSTMAN -alat koji to omogucava.
+
+******Uputsvo za Postman: (podrazumeva se da je vec instaliran na racunaru)
+- kad se otvori aplikacija, na ekranu se otvara prozor.
+- sa leve strane je History i tu vidimo sve sto smo radili.
+- najveci deo prozora zauzima "main window" i tu imamo upite(gore) i odgovore(dole).
+
+1. Kreiranje upita
+- kliknemo CTA dugme NEW ispod glavne linije menija (narandzaste boje).
+- request
+- otvara se prozor da damo ime, opis i ako postoji kolekcija mozemo da ubacimo upit u nju.
+- kad udjemo u upit, u glavnom prozoru kopiramo URL adresu, kliknemo SEND i dole u sekciji Body, imamo rezultat. 
+ Neke vrste zahteva koje mozemo da izaberemo :
+  1) GET metoda - za preuzimanja podataka sa dobijene adrese. Kopiramo URL adresu, kliknemo Send i u sekciji Body, imamo rezultat.
+  2) POST metoda - podrazumeva slanje podataka u aplikaciju, dakle njihovo ubacivanje u bazu. 
+  npr. novi zahtev saljemo tako što kliknemo na plusic pored imena aplikacije, odaberemo POST, unesemo URL adresu koja se koristi za 
+ubacivanje novih podataka, odemo na Body – Raw i unesemo podatke koje zelimo da posaljemo i kliknemo SEND. 
+  3) PUT metoda - moze da ubaci podatke u odredjeni segment, ukoliko on ne postoji. U suprotnom menja vec postojece podatke.
+  4) PATCH metoda -takodje menja segment, ali ima set uputstava koja opisuju kako treba promeniti tj. modifikovati resurs na izvornom serveru kako bi dobili novu verziju.
+
+RAZLIKA IZMEDJU PUT I PATCH METODE:
+PUT menja ceo resurs, PATCH menja samo deo resursa.
+ 
+
+
+

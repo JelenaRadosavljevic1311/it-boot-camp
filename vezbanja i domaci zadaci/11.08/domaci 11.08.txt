@@ -1,0 +1,70 @@
+1. Napisati program koji od korisnika trazi da unese cetiri cela broja od 0 do n, 
+a zatim da prva dva broja pomnozi a treci i cetvrti sabere. Rezultat oba racunanja treba da se 
+ispisuje zajedno sa informacijom da li je rezultat tih racunanja paran ili neparan broj.
+
+import java.util.Scanner;
+
+public class CetiriCelaBroja {
+    public static void main(String[] args) {
+        // unos 4 cela broja od 0 do n
+        // prva dva broja pomnozi
+        // druga dva br sabira
+        //rezultati zajedno par ili nepar
+        System.out.println("Unesi 4 broja:");
+        Scanner sc = new Scanner(System.in);
+        int a, b, c, d;
+        a = sc.nextInt();
+        System.out.println("Uneli ste prvi, unesite jos 3 broja:");
+        b = sc.nextInt();
+        System.out.println("Uneli ste dva, unesite jos 2 broja:");
+        c = sc.nextInt();
+        System.out.println("Uneli ste tri, unesite jos 1 broj:");
+        d = sc.nextInt();
+
+        int proizvod = a * b;
+        int zbir = c + d;
+
+        if (proizvod % 2 == 0) {
+            System.out.println("Proizvod brojeva "+a+" i " +b+ " je paran broj i on iznosi: " + proizvod);
+        } else {
+            System.out.println("Proizvod brojeva "+a+" i " +b+ " je neparan broj i on iznosi: " + proizvod);
+        }
+
+        if (zbir % 2 == 0) {
+            System.out.println("Zbir brojeva "+c+" i " +d+ " je paran broj i on iznosi: " + zbir);
+        } else {
+            System.out.println("Zbir brojeva "+c+" i " +d+ " je neparan broj i on iznosi: " + zbir);
+        }
+    }
+}
+
+
+
+
+2. Napisati program koji ubacuje unetu kolicinu lopti u korpu za kupovinu. 
+Prilikom unosa broja lopti, u korpu se mora ubaciti minimum jedna lopta 
+a maksimalan broj lopti koji moze da stane u korpu je 33.
+
+import java.util.Scanner;
+
+public class Lopte {
+    public static void main(String[] args){
+        //unos lopti minimum 1, maximum 33
+
+
+        Scanner sc = new Scanner(System.in);
+        int x;
+        int zbir =0;
+
+        while(true) {
+            if (zbir<33) {
+                System.out.println("Ubacite u torbu koliko zelite loptica da uzmete: ");
+                x = sc.nextInt();
+            } else {
+                break;
+            }
+            zbir = zbir + x;
+        }
+        System.out.println("Maksimalan broj loptica koji moze da stane je 33, a vi vec imate "+ zbir + ".");
+    }
+}

@@ -1,0 +1,65 @@
+1. Napisati program koji ce uneseni broj u opsegu od 0 do n 
+deliti sa 2 i 3. 
+Ukoliko je ceo broj, treba da izbaci rezultat a ukoliko ne, treba da 
+ispise odgovarajucu poruku.
+
+import java.util.Scanner;
+
+public class DomaciBrojevi {
+    public static void main(String[] args) {
+        System.out.println("Unesite broj kako biste proverili da li je deljiv sa brojevima 2 i 3: ");
+        int m;
+        Scanner sc = new Scanner(System.in);
+        m = sc.nextInt();
+
+        if (m % 2 == 0 && m % 3 ==0) {
+            System.out.println("Ako broj koji ste upisali podelimo sa brojem 2, rezultat je: " + (m / 2));
+            System.out.println("Ako broj koji ste upisali podelimo sa brojem 3, rezultat je: " + (m / 3));
+        } else {
+         System.out.println("Rezultat nije deljiv sa oba broja ili je deljiv samo sa jednim brojem, probajte sa drugim brojem.");
+       }
+    }
+ }
+
+
+
+
+2. Napisati program koji unosi i sabira dva broja dokle god je zbir brojeva ide do broja 10 (ukljucujuci i 10)
+ a mnozi dokle god je proizvod veci od (predhodno) maksimalnog zbira brojeva do broja n.Od vas se trazi da korisnik unese 2 broja. 
+OBJASNJENJE ZADATKA SA ZOOMA: Ako je zbir ta dva broja manji ili jednak od broja 10, onda treba da ih sabere i izbaci rezultat. Ako je zbir dva broja veci od 10,
+ onda oni trebaju da se mnoze i izbace rezultat.
+
+import java.util.Scanner;
+
+public class DomaciBrojeviDva {
+    public static void main(String[] args) {
+
+        System.out.println("Unesi jedan broj: ");
+        Scanner sc = new Scanner(System.in);
+        int x;
+        int y;
+
+        x = sc.nextInt();
+
+        System.out.println("Unesi drugi broj:");
+        y = sc.nextInt();
+        int zbir=0;
+        zbir = x + y;
+        if (zbir<=10){
+            System.out.println("Zbir je:"+ zbir);
+        } else{
+            System.out.println("Rezultat je "+ x*y);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+

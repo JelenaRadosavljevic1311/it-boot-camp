@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class BasicScanner {
+    public static void main (String[]args) throws FileNotFoundException {
+        Scanner in;
+        String filename;
+        int numberOfLines;
+        if(args.length !=1) {
+            System.exit(1);
+        }
+            filename = args[0];
+            in = new Scanner(new File(filename));
+            numberOfLines= in.nextInt();
+            System.out.println("The number of lines is: " + numberOfLines);
+        int i = 0;
+            while (i <= numberOfLines) {
+                System.out.println(in.nextLine());
+                i++;
+            }
+        }
+    }
+

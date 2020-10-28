@@ -1,0 +1,174 @@
+1. Otvorio se novi luna park gde se moze kupiti 3 tipa zetona za voznju.
+Prvi zeton vam omogucava sve voznje, drugi za svaku drugu (bilo koju), 
+a treci za svaku cetvrtu (bilo koju) voznju. 
+Napisati program koji ce izracunati koliko kojih zetona je potrebno da 
+bi se islo na sve voznje tri puta.
+
+
+import java.util.Scanner;
+
+public class LunaPark {
+    public static void main(String[] args) {
+
+        System.out.println("Unesi broj voznji: ");
+        Scanner sc = new Scanner(System.in);
+        int BrojVoznji;
+        BrojVoznji = sc.nextInt();
+        if (BrojVoznji <= 0) {
+            System.out.println("Morate uneti broj veci od 0. Pokusajte ponovo");
+        } else {
+
+            System.out.println("Dobro dosli. Imate 3 vrste zetona da izaberete.");
+            System.out.println("Ako ukucate broj 1, to su beli zetoni, za sve voznje.");
+            System.out.println("Ako ukucate broj 2, to su zuti zetoni, za svaku drugu voznju.");
+            System.out.println("Ako ukucate broj 3, to su crveni zetoni, za svaku cetvrtu voznju.");
+
+            int x;
+            x = sc.nextInt();
+
+            switch (x) {
+                case 1:
+                    System.out.println("Broj belih zetona koji vam je potreban za ovaj broj voznji je :" + BrojVoznji);
+                    break;
+                case 2:
+                    System.out.println("Broj zutih zetona koji vam je potreban za ovaj broj voznji je :" + BrojVoznji * 2);
+                    break;
+                case 3:
+                    System.out.println("Broj crvenih zetona koji vam je potreban za ovaj broj voznji je :" + BrojVoznji * 4);
+                    break;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+2. Napisati program koji na osnovu unetog broja ispisuje sa koliko slova se pise taj broj -
+ za resavanje ovog zadatka koristiti switch.
+
+import java.util.Scanner;
+
+public class UnosICitanjeBroja {
+    public static void main(String[] args) {
+        System.out.println("Unesi broj: ");
+        Scanner sc = new Scanner(System.in);
+
+        int x;
+        x = sc.nextInt();
+
+
+        switch (x) {
+
+            case 2977 :
+                String n = "dveHiljadeDevetStotinaSedamdesetSedam";
+                System.out.println(n);
+                System.out.print(n.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 50999 :
+                String o = "PedesetHiljadaDevetStotinaDevedesetDevet";
+                System.out.println(o);
+                System.out.print(o.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 1 :
+                String a = "jedan";
+                System.out.println(a);
+                System.out.print(a.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 2 :
+                String j = "dva";
+                System.out.println(j);
+                System.out.print(j.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 3 :
+                String k = "tri";
+                System.out.println(k);
+                System.out.print(k.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+
+            case 90 :
+                String b = "devedeset";
+                System.out.println(b);
+                System.out.print(b.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 13 :
+                String c = "trinaest";
+                System.out.println(c);
+                System.out.print(c.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 100 :
+                String d = "sto";
+                System.out.println(d);
+                System.out.print(d.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 50 :
+                String e = "pedeset";
+                System.out.println(e);
+                System.out.print(e.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 99 :
+                String f = "devedesetDevet";
+                System.out.println(f);
+                System.out.print(f.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 75 :
+                String g = "sedamdesetPet";
+                System.out.println(g);
+                System.out.print(g.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 16 :
+                String h = "sesnaest";
+                System.out.println(h);
+                System.out.print(h.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 500 :
+                String i = "petStotina";
+                System.out.println(i);
+                System.out.print(i.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 67 :
+                String l = "sezdesetSedam";
+                System.out.println(l);
+                System.out.print(l.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+
+            case 1987 :
+                String m = "hiljaduDevetStotinaOsamdesetSedam";
+                System.out.println(m);
+                System.out.print(m.length());
+                System.out.println(" (broj karaktera u broju koji ste upisali) ");
+                break;
+        }
+      }
+    }
+
+

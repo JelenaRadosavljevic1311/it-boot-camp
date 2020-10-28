@@ -1,0 +1,63 @@
+1. Napraviti program koji ce iz vaseg fajla pomocu petlje 
+ispisati samo parne brojeve.
+
+import java.io.*;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class ParniBrojevi {
+    public static void main(String[] args) throws FileNotFoundException {
+        String filename;
+        String lines;
+
+
+        if (args.length != 1) {
+            System.exit(1);
+        }
+        filename = args[0];
+        Scanner Skener = new Scanner(new File(filename));
+
+
+        while (Skener.hasNext()) {
+            int a = Integer.parseInt(Skener.nextLine());
+            if (a % 2 == 0) {
+                System.out.println(a);
+            }
+
+        }
+    }
+}
+
+
+
+
+2. Napraviti program koji ce sabirati tri broja i ispisati rezultat 
+u formi: “Zbir broja x, broja y i broja z iznosi Q”
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Domaci {
+    public static void main(String args[]) throws FileNotFoundException {
+        String filename;
+        Scanner in;
+        int x,y,z,Q;
+
+        if (args.length != 1) {
+            System.exit(1);
+        }
+        filename = args[0];
+        in = new Scanner(new File(filename));
+        do {
+            x = Integer.parseInt(in.nextLine());
+            y = Integer.parseInt(in.nextLine());
+            z= Integer.parseInt(in.nextLine());
+            System.out.println(String.format("The sum of %d and %d and %d is Q= %d :",x,y,z, x+y+z));
+        } while (in.hasNext());
+    }
+}
+
+
+
+3. Kada se i zbog cega koristi FileNotFoundException?
+Kada citamo argumente iz nekog file-a za koji moramo dodamo putanju u konfiguraciji.
